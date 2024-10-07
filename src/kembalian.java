@@ -1,6 +1,6 @@
 import java.util.Scanner ;
 
-public class kembalian {
+public class Kembalian {
     public static void main(String[] args) throws Exception {
         Scanner inputan = new Scanner(System.in);
         float harga, jumlahTelur, totalBayar, uang, kembalian;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class latihankembalian {
+public class Latihankembalian {
     public static void main(String[] args) throws Exception {
         Scanner inputan = new Scanner (System.in);
 
