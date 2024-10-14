@@ -1,3 +1,4 @@
+package Tugas_sesi_3;
 import java.util.Scanner;
 public class Jeruk {
     public static void main(String[] args) {

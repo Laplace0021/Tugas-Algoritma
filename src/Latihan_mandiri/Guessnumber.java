@@ -1,3 +1,4 @@
+package Latihan_mandiri;
 import java.util.Random;
 import java.util.Scanner;
 

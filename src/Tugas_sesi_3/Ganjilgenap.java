@@ -1,3 +1,5 @@
+package Tugas_sesi_3;
+
 import java.util.Scanner;
 
 public class Ganjilgenap {

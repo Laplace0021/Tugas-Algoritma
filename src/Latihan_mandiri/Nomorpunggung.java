@@ -1,3 +1,4 @@
+package Latihan_mandiri;
 import java.util.Scanner;
 public class Nomorpunggung {
     public static void main(String[] args) throws Exception{

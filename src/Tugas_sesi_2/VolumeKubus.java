@@ -1,3 +1,4 @@
+package Tugas_sesi_2;
 import java.util.Scanner;
 public class VolumeKubus {
     public static void main(String[] args)throws Exception {

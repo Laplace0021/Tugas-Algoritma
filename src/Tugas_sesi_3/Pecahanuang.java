@@ -1,3 +1,4 @@
+package Tugas_sesi_3;
 import java.util.Scanner;
 /*Buatlah program untuk menghitung pecahan uang (100 ribuan, 50 ribuan, 20 ribuan, 10 ribuan, 5 ribuan, 2 ribuan, 1ribuan, 500, dan 100)
 Contoh 57000
