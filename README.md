@@ -1,18 +1,30 @@
-## Getting Started
+# Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to the place where i submit my assignment and practice java.
 
-## Folder Structure
+# Timeline
 
-The workspace contains two folders by default, where:
+## First week
+1. Flowchart
+2. Install Java and IDE
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Second week
+1. Get Started
+2. Data Type
+3. Operation
+4. Scanner
+5. introducing if else
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Third week
+1. If else
+2. modulus
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Fourth
+1. looping
+2. for
+3. while
+4. do while
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Fifth
+1.Array
+2.ArrayList
