@@ -26,5 +26,5 @@ Welcome to the place where i submit my assignment and practice java.
 4. do while
 
 ## Fifth
-1.Array
-2.ArrayList
+1. Array
+2. ArrayList
