@@ -1,5 +1,5 @@
 package Tugas_sesi_4;
-// 1 1 2 4 7 13 24 44 81
+// Output : 1 1 2 4 7 13 24 44 81
 public class Tugas6 {
     public static void main(String[] args) {
         int a = 0;
