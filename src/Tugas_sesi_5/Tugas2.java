@@ -15,27 +15,27 @@ public class Tugas2 {
         Scanner sc = new Scanner(System.in);
         // Menambahkan data ke ArrayList<String>
         ArrayList<String> buah1 = new ArrayList<>();
-        buah1.add("apel");
+        buah1.add("Apel");
         buah1.add("35000");
         Buah.add(buah1);
 
         ArrayList<String> buah2 = new ArrayList<>();
-        buah2.add("jeruk");
+        buah2.add("Jeruk");
         buah2.add("50000");
         Buah.add(buah2);
 
         ArrayList<String> buah3 = new ArrayList<>();
-        buah3.add("mangga");
+        buah3.add("Mangga");
         buah3.add("25000");
         Buah.add(buah3);
 
         ArrayList<String> buah4 = new ArrayList<>();
-        buah4.add("duku");
+        buah4.add("Duku");
         buah4.add("15000");
         Buah.add(buah4);
 
         ArrayList<String> buah5 = new ArrayList<>();
-        buah5.add("semangka");
+        buah5.add("Semangka");
         buah5.add("20000");
         Buah.add(buah5);
 
@@ -46,8 +46,9 @@ public class Tugas2 {
         do { // looping
              // menampilkan menu
             System.out.println("=".repeat(50));
-            System.out.println("Menu: ");
+            System.out.println("Selamat datang di toko buah!");
             System.out.println("=".repeat(50));
+            System.out.println("Silakan pilih salah satu opsi berikut:");
             System.out.println("1. Beli Buah");
             System.out.println("2. Struk Belanja");
             System.out.println("3. Keluar");
@@ -56,7 +57,6 @@ public class Tugas2 {
             pilihan = sc.nextInt();
             sc.nextLine();
             if (pilihan == 3) {
-                System.out.println("Anda telah keluar dari program");
                 break; // menghentikan program
             }
             switch (pilihan) {
@@ -67,15 +67,15 @@ public class Tugas2 {
                     for (int i = 0; i <= 4; i++) { // diambil dari Arraylist<ArrayList<String>> Buah
                         String nama = Buah.get(i).get(0);
                         String harga = Buah.get(i).get(1);
-                        System.out.println((i + 1) + ". " + nama + " - " + harga ); // +1 agar menu yang ditampilkan dimulai dari 1.
+                        System.out.println((i + 1) + ". " + nama + " \t Rp." + harga ); // +1 agar menu yang ditampilkan dimulai dari 1.
                     }
-                    System.out.print("Buah yang ingin anda beli: ");
+                    System.out.print("Masukan nomor buah yang ingin anda beli: ");
                     int buahdipilih = sc.nextInt();
                     sc.nextLine();
                     buahdipilih -= 1; // -1 karena menyesuaikan dengan index
 
                     if (buahdipilih >= 0 && buahdipilih < Buah.size()) { // jika angka yang dimasukan user ada di array
-                        System.out.print("Masukan jumlah: ");
+                        System.out.print("Masukan jumlah (kg): ");
                         int jumlah = sc.nextInt();
                         sc.nextLine();
 
@@ -88,24 +88,24 @@ public class Tugas2 {
                         hargaBuah.add(harga); // memasukan data ke arraylist hargaBuah
                         totalbelanja += subtotal;
 
-                        System.out.println("Buah telah ditambahkan kedalam keranjang");
+                        System.out.println("Buah "+nama+ " sebanyak " + jumlah + "KG telah ditambahkan kedalam keranjang.");
 
                         System.out.print("Ingin menambah buah lain kedalam keranjang? (y/n): ");
                         tambahBuah = sc.nextLine().toLowerCase();
                     } else {
-                        System.out.println("Masukan berupa angka yang tersedia"); // jika user menginput data yang tidak
+                        System.out.println("Masukan nomor buah yang tersedia."); // jika user menginput data yang tidak
                         // tersedia di list
                     }
                 }while(tambahBuah.equals("y"));
                     break; // mengembalikan user ke menu utama
                 case 2: // jika user mengambil struk
-                    System.out.println("\t\tDaftar Belanja:");
+                    System.out.println("\t\tDaftar Belanja");
                     System.out.println("=".repeat(50));
                     if (namaBuah.isEmpty()) { // jika user belum membeli buah
-                        System.out.println("=== Anda belum menambahkan apapun ===");
+                        System.out.println("=== Anda belum menambahkan apapun kedalam keranjang ===");
                         break; // dikembalikan ke menu utama
                     }
-                    System.out.println("No.\tNama Buah\tJumlah\tHarga\tSubtotal");
+                    System.out.printf( "%-3s %-10s %-11s %-9s %-10s %n","No.","Nama Buah","Jumlah","Harga","Subtotal");
 
                     for (int i = 0; i < namaBuah.size(); i++) { // mengambil setiap data di ArrayList
                         String nama = namaBuah.get(i);
@@ -113,16 +113,16 @@ public class Tugas2 {
                         int harga = hargaBuah.get(i);
                         int subtotal = jumlah * harga;
 
-                        System.out.println((i + 1) + "\t" + nama + "\t\t" + jumlah + "\t" + harga + "\t" + subtotal);
+                        System.out.printf("%-3d %-12s %-9d %-10s %-10s %n",(i + 1),nama,jumlah,harga,subtotal);
 
                     }
 
                     System.out.println("=".repeat(50));
-                    System.out.println("Total: " + totalbelanja);
+                    System.out.println("Total: Rp." + totalbelanja);
                     int diskon = totalbelanja * 15 / 100;
-                    System.out.println("Discount(15%): " + diskon);
+                    System.out.println("Discount(15%): Rp." + diskon);
                     int totalbayar = totalbelanja - diskon;
-                    System.out.println("Total bayar: " + totalbayar);
+                    System.out.println("Total bayar: Rp." + totalbayar);
                     System.out.println("=".repeat(50));
                     System.out.println("1. Bayar");
                     System.out.println("2. Kembali");
@@ -137,8 +137,8 @@ public class Tugas2 {
                         } else {
                             System.out.println("=== Pembayaran berhasil ===");
                             int kembalian = uang - totalbayar;
-                            System.out.println("Kembalian anda: " + kembalian);
-                            System.out.print("Ingin membeli barang yang lainnya? (y/n): "); // if y then loop if n then end the loop
+                            System.out.println("Kembalian anda: Rp." + kembalian);
+                            System.out.print("Ingin membeli buah yang lainnya? (y/n): "); // if y then loop if n then end the loop
                             inputlagi = sc.nextLine().toLowerCase();
                             namaBuah.clear(); // menghapus semua data yang ada di dalam array
                             jumlahBuah.clear();
@@ -146,17 +146,18 @@ public class Tugas2 {
                             totalbelanja = 0;
                         }
                     } else if (input != 2) { // jika user menginput selain 1 dan 2
-                        System.out.println("Masukan input yang tersedia, anda dikembalikan ke menu utama.");
+                        System.out.println("Opsi tidak tersedia.");
                     }
 
                     break; // user memilih kembali, dikembalikan ke menu utama
 
                 default: // jika user memasukan input selain 1,2,dan 3
-                    System.out.println("Masukan pilihan yang tersedia");
+                    System.out.println("Masukan pilihan yang tersedia.");
                     break; // kembali ke menu utama
             }
 
         } while (inputlagi.equals("y"));
+        System.out.println("=== Terima kasih sudah berbelanja ===");
         sc.close();
     }
 }
