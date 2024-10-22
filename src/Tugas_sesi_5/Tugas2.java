@@ -41,6 +41,7 @@ public class Tugas2 {
 
         int pilihan = 1;
         String inputlagi = "y";
+        String tambahBuah = "y";
 
         do { // looping
              // menampilkan menu
@@ -60,6 +61,7 @@ public class Tugas2 {
             }
             switch (pilihan) {
                 case 1: // jika user membeli buah
+                do{
                     System.out.println("=".repeat(50));
                     System.out.println("Buah yang tersedia: "); // menampilkan menu buah yang tersedia
                     for (int i = 0; i <= 4; i++) { // diambil dari Arraylist<ArrayList<String>> Buah
@@ -86,10 +88,14 @@ public class Tugas2 {
                         totalbelanja += subtotal;
 
                         System.out.println("Buah telah ditambahkan kedalam keranjang");
+
+                        System.out.print("Ingin menambah buah lain kedalam keranjang? (y/n): ");
+                        tambahBuah = sc.nextLine().toLowerCase();
                     } else {
                         System.out.println("Masukan berupa angka yang tersedia"); // jika user menginput data yang tidak
-                                                                                  // tersedia di list
+                        // tersedia di list
                     }
+                }while(tambahBuah.equals("y"));
                     break; // mengembalikan user ke menu utama
                 case 2: // jika user mengambil struk
                     System.out.println("Daftar Belanja:");
