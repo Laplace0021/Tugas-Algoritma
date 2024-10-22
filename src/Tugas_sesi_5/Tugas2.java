@@ -98,7 +98,7 @@ public class Tugas2 {
                 }while(tambahBuah.equals("y"));
                     break; // mengembalikan user ke menu utama
                 case 2: // jika user mengambil struk
-                    System.out.println("Daftar Belanja:");
+                    System.out.println("\t\tDaftar Belanja:");
                     System.out.println("=".repeat(50));
                     if (namaBuah.isEmpty()) { // jika user belum membeli buah
                         System.out.println("=== Anda belum menambahkan apapun ===");
