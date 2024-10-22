@@ -101,7 +101,7 @@ public class Tugas2 {
                     System.out.println("Daftar Belanja:");
                     System.out.println("=".repeat(50));
                     if (namaBuah.isEmpty()) { // jika user belum membeli buah
-                        System.out.println("Anda belum menambahkan apapun");
+                        System.out.println("=== Anda belum menambahkan apapun ===");
                         break; // dikembalikan ke menu utama
                     }
                     System.out.println("No.\tNama Buah\tJumlah\tHarga\tSubtotal");
@@ -131,10 +131,10 @@ public class Tugas2 {
                         int uang = sc.nextInt();
                         sc.nextLine();
                         if (uang < totalbayar) {
-                            System.out.println("Uang anda tidak cukup");
+                            System.out.println("=== Uang anda tidak cukup ===");
                             break; // dikembalikan ke menu utama
                         } else {
-                            System.out.println("Pembayaran berhasil");
+                            System.out.println("=== Pembayaran berhasil ===");
                             int kembalian = uang - totalbayar;
                             System.out.println("Kembalian anda: " + kembalian);
                             System.out.print("Ingin membeli barang yang lainnya? (y/n): "); // if y then loop if n then end the loop
