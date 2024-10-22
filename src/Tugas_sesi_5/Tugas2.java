@@ -66,7 +66,8 @@ public class Tugas2 {
                     System.out.println("Buah yang tersedia: "); // menampilkan menu buah yang tersedia
                     for (int i = 0; i <= 4; i++) { // diambil dari Arraylist<ArrayList<String>> Buah
                         String nama = Buah.get(i).get(0);
-                        System.out.println((i + 1) + ". " + nama); // +1 agar menu yang ditampilkan dimulai dari 1.
+                        String harga = Buah.get(i).get(1);
+                        System.out.println((i + 1) + ". " + nama + " - " + harga ); // +1 agar menu yang ditampilkan dimulai dari 1.
                     }
                     System.out.print("Buah yang ingin anda beli: ");
                     int buahdipilih = sc.nextInt();
@@ -156,5 +157,6 @@ public class Tugas2 {
             }
 
         } while (inputlagi.equals("y"));
+        sc.close();
     }
 }
