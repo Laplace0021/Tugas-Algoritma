@@ -105,7 +105,7 @@ public class Tugas2 {
                         System.out.println("=== Anda belum menambahkan apapun kedalam keranjang ===");
                         break; // dikembalikan ke menu utama
                     }
-                    System.out.printf( "%-3s %-10s %-11s %-9s %-10s %n","No.","Nama Buah","Jumlah","Harga","Subtotal");
+                    System.out.printf( "%-3s %-10s %-11s %-11s %-10s %n","No.","Nama Buah","Jumlah","Harga","Subtotal");
 
                     for (int i = 0; i < namaBuah.size(); i++) { // mengambil setiap data di ArrayList
                         String nama = namaBuah.get(i);
@@ -113,7 +113,7 @@ public class Tugas2 {
                         int harga = hargaBuah.get(i);
                         int subtotal = jumlah * harga;
 
-                        System.out.printf("%-3d %-12s %-9d %-10s %-10s %n",(i + 1),nama,jumlah,harga,subtotal);
+                        System.out.printf("%-3d %-12s %-9d %-12s %-10s %n",(i + 1),nama,jumlah,"Rp."+harga,"Rp."+subtotal);
 
                     }
 
