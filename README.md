@@ -28,3 +28,9 @@ Welcome to the place where i submit my assignment and practice java.
 ## Fifth week
 1. Array
 2. ArrayList
+
+## Sixth week
+1. Array Multidimentional
+2. ArrayList
+3. Queue
+4. Stack
