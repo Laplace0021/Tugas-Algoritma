@@ -11,7 +11,7 @@ public class Tugas2 {
     static ArrayList<Integer> jumlahBuah = new ArrayList<>();
     static ArrayList<Integer> hargaBuah = new ArrayList<>();
     static int totalbelanja = 0;
-    static int saldo = 1000000; // optional //Get the user's balance for future use, but set it for now
+    static int saldo = 1000000; // optional 
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
