@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Interviewtest {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        int nilai,a,b;
+        int nilai;
         System.out.print("Nilai test coding: ");
         nilai = input.nextInt();
         System.out.print("Nilai test wawancara: ");
