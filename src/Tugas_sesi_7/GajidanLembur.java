@@ -7,7 +7,7 @@ public class GajidanLembur {
         System.out.println("Program penghitung total gaji");
         System.out.print("Masukan gaji anda: ");
         int gaji = sc.nextInt();
-        System.err.print("Masukan total lembur(jam): ");
+        System.out.print("Masukan total lembur(jam): ");
         int jamLembur = sc.nextInt();
         int lemburLebih  = 0;
         if (jamLembur>4){
