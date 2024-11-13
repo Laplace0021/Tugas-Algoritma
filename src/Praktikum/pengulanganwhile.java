@@ -1,3 +1,4 @@
+package Praktikum;
 public class pengulanganwhile {
     public static void main(String[] args) {
     int i=10;

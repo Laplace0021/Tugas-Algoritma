@@ -1,3 +1,4 @@
+package Praktikum;
 import java.util.Scanner;
 // Status barang terbeli atau tidak
 public class TernaryTest {
