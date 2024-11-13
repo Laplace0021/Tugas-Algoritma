@@ -1,4 +1,4 @@
-package Essay_Uts;
+package Latihan_mandiri;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -25,9 +25,9 @@ public class dataMahasiswa {
             String mataKuliah = sc.nextLine();
             System.out.print("SKS: ");
             int matkulSks = sc.nextInt();
+            sc.nextLine();
             System.out.print("Nilai: ");
             String matkulNilai = sc.nextLine().toUpperCase();
-            sc.nextLine();
             switch (matkulNilai) {
                 case "A":
                     bobot = 4;
