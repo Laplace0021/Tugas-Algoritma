@@ -34,3 +34,9 @@ Welcome to the place where i submit my assignment and practice java.
 2. ArrayList
 3. Queue
 4. Stack
+
+## Seveenth week
+1. prepare for exam
+
+## Eight week 
+1. EXAMMMMM
