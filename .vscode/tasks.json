@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile Java",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-d", "bin",
+                "src/Praktikum/Array.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
