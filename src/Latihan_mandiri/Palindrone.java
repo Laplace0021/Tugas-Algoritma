@@ -1,11 +1,4 @@
 package Latihan_mandiri;
-/* ALGORITMA
- *  MASUKAN INPUT
- * DIBAGI 2
- * CARI PANJANG STRING
- * WHILE I <=STRING
- * IF
- */
 
 import java.util.Scanner;
 public class Palindrone {
@@ -13,13 +6,15 @@ public class Palindrone {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukan kata/angka yang ingin anda cek: ");
         String kata = input.next();
-        int i = 1;
-        StringBuilder sb = new StringBuilder(kata);
-        String reversed = sb.reverse().toString();
-        int a= kata.length()/2;
-        int limit = a;
-        if (kata.length()%2==1){
-            
+        String reverse = "";
+
+        for (int i = kata.length()-1; i >= 0; i--){
+            reverse = reverse + kata.charAt(i);
+        }
+        if (kata.equals(reverse)){
+            System.out.println("Palindrone");
+        } else {
+            System.out.println("bukan palindrone");
         }
 
     }
