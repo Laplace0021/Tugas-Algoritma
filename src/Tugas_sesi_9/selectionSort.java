@@ -1,18 +1,17 @@
 package Tugas_sesi_9;
 
-// import java.util.Random;
+import java.util.Random;
 
 public class selectionSort {
 
     public static void main(String[] args) {
-        // Random rand = new Random();
-        // int[] angka = new int[10]; // membuat array
+        Random rand = new Random();
+        int[] angka = new int[10]; // membuat array
 
-        // for (int i = 0; i < angka.length; i++) {
-        //     angka[i] = rand.nextInt(100); // mengisi array dengan angka random
-        // }
-        
-        int [] angka = {2,1,6,3,5,4};
+        for (int i = 0; i < angka.length; i++) {
+            angka[i] = rand.nextInt(100); // mengisi array dengan angka random
+        }
+
         System.out.println("Before: ");
         print(angka);
 
