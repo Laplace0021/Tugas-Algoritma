@@ -15,7 +15,6 @@ public class bubbleSort {
         bubble(angka);
         System.out.println("\nafter: ");
         print(angka);
-
     }
 
     private static void print(int[] angka) {
